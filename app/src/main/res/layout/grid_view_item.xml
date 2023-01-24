@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="property"
+            type="com.example.harrypottercharacters.network.HpProperty"/>
+    </data>
+    
+    <ImageView
+        android:id="@+id/HpImage"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        app:image="@{property.imgSrcUrl}"
+        android:src="@drawable/ic_launcher_background"
+        tools:ignore="ContentDescription" />
+
+</layout>
